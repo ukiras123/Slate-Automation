@@ -2,7 +2,6 @@ package main.gui;
 
 import javax.swing.*;
 import javax.swing.border.Border;
-
 import java.awt.*;
 
 /**
@@ -59,7 +58,9 @@ public class SlateGUI extends JFrame {
         outputArea.setBounds(75, 203, 341, 92);
         Border border = BorderFactory.createLineBorder(Color.BLACK);
         outputArea.setBorder(BorderFactory.createCompoundBorder(border,
-                BorderFactory.createEmptyBorder(10, 10, 10, 10)));
+                BorderFactory.createEmptyBorder(5, 5, 5, 5)));
+        outputArea.setLineWrap(true);
+        outputArea.setWrapStyleWord(true);
         getContentPane().add(outputArea);
 
         createBtn = new JButton("Create Data");
