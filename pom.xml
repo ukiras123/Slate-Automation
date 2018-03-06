@@ -7,6 +7,18 @@
     <groupId>com.kiran.slate</groupId>
     <artifactId>slate-automation</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
+        <dependency>
+            <groupId>com.jayway.restassured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.4</version>
+        </dependency>
+    </dependencies>
 
 </project>

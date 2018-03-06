@@ -97,6 +97,7 @@ local.properties
 # Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
+.imi
 
 # CMake
 cmake-build-debug/
