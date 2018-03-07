@@ -2,6 +2,7 @@ package dao.schedule;
 
 import dao.GenericDao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,6 +17,10 @@ public class Schedule extends GenericDao {
     private List<ScheduleSegment> scheduleSegments;
 
     public Schedule() {
+        scheduleSegments = new ArrayList<ScheduleSegment>();
+        this.setActivationDate("2017-06-27T17:25:09-04:00");
+        this.setInactivationDate("2020-10-28T23:59:59-04:00");
+        this.setWorkflow("push");
     }
 
     public Schedule(String activationDate, String inactivationDate, String workflow, String description, boolean repeatLastSegmentIndefinitely, String firstOccurrenceOverride, List<ScheduleSegment> scheduleSegments) {

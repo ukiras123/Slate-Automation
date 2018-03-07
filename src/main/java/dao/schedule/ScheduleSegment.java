@@ -18,7 +18,7 @@ public class ScheduleSegment {
     }
 
     public ScheduleSegment() {
-
+        timepoint = new Timepoint();
     }
 
     public int getSegmentNumber() {

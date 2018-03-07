@@ -1,8 +1,6 @@
 package main.gui;
 
 import javax.swing.*;
-import javax.swing.border.Border;
-import java.awt.*;
 
 /**
  * Created by Kiran on 3/5/18.
@@ -55,13 +53,13 @@ public class SlateGUI extends JFrame {
         getContentPane().add(fileField);
 
         outputArea = new JTextArea("");
-        outputArea.setBounds(75, 203, 341, 92);
-        Border border = BorderFactory.createLineBorder(Color.BLACK);
-        outputArea.setBorder(BorderFactory.createCompoundBorder(border,
-                BorderFactory.createEmptyBorder(5, 5, 5, 5)));
         outputArea.setLineWrap(true);
         outputArea.setWrapStyleWord(true);
-        getContentPane().add(outputArea);
+
+        JScrollPane scroll = new JScrollPane ( outputArea );
+        scroll.setBounds(75, 203, 341, 92);
+        scroll.setVerticalScrollBarPolicy ( ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS );
+        getContentPane().add(scroll);
 
         createBtn = new JButton("Create Data");
         createBtn.setBounds(165, 149, 153, 25);
