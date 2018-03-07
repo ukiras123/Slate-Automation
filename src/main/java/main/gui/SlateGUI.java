@@ -50,7 +50,7 @@ public class SlateGUI extends JFrame {
         fileLab.setBounds(75, 65, 78, 25);
         getContentPane().add(fileLab);
 
-        fileField = new JTextField("");
+        fileField = new JTextField("/Users/kgautam/Desktop/Template.xlsx");
         fileField.setBounds(165, 64, 251, 25);
         getContentPane().add(fileField);
 
